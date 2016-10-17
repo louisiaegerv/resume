@@ -1,2 +1,2 @@
-# ThePortfolio
-My personal portfolio
+# TheResume
+My online resume
