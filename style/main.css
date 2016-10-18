@@ -89,6 +89,9 @@ h1, h2, h3, h4, p, li, ul {
 .content .jobDescription {
   font-size: 2vmin; }
 
+.techPic {
+  margin: 20px 0; }
+
 .techPic img {
   width: 100%;
   border-radius: 5%; }
