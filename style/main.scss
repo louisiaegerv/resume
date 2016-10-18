@@ -1,32 +1,52 @@
+// Imports 
+
 //@import 'reset';      // resets styles from code in _reset.scss
+@import 'fonts';
+
+
+// Variables
 $main-font: #5D5956;
 $alt-font: #FFF;
 $sidebar-bg: #4E90D1;
-$page-bg: rgba(0, 0, 0, .1);
+$page-bg: rgba(0, 0, 0, .05);
 
-html, body, .container-fluid {
+
+// Document styling
+html, body {
   color: $main-font;
   background: $page-bg; }
 
-.profImg, .nameHolder {
-  margin-top: 20px;
-}
+h1, h2, h3, h4, p, li, ul {
+  font-family: $f2; }
 
-.nameHolder {
-  text-align: center !important;
-  font-size: 1.2rem; }
+#name h1 {
+  font-family: $f4; }
 
 .container-fluid {
   max-width: 1000px; }
 
-.profImg {
-  min-height: 300px; 
+
+//Profile Image
+.profImg, .nameHolder {
+  margin-top: 20px; }
+  .profImg {
+  margin-bottom: 30px;
   background: url(../assets/img/me.jpg) no-repeat center 0px !important;
   background-size: cover !important; }
 
+
+// Main Content
+.nameHolder {
+  text-align: center !important; }
+  #name h1 {
+    font-size: 5vmin;
+    text-shadow: 3px 3px rgba(0,0,0, .2); }
+  #name p {
+    font-size: 2vmin; }
+
 .card {
   box-shadow: 0px 0px 10px rgba(0,0,0, .3);
-  padding: 20px;
+  padding: 20px 0;
   margin-bottom: 30px;
   background: $alt-font;
   position: relative;
@@ -36,46 +56,77 @@ html, body, .container-fluid {
     color: $alt-font;
     background: $sidebar-bg; }
   .card .row {
-    padding-right: 20px; }
-
-
-.sidebar {
-  margin-bottom: 20px;
-  color: $alt-font;
-  background: $sidebar-bg; }
+    padding: 0 0 0 10px;  }
 
 .iconSpace {
   text-align: center;
-  padding: 30px 0; }
+  font-size: 8vmin;
+  padding: 0 10px; }
 
 .sectionTitle {
   border-bottom: 2px solid $main-font;
-  padding-left: 0 !important; }
+  padding-left: 0 !important;
+  padding-top: 8px;
+  margin-left: 15px; }
+  .sectionTitle h1 {
+    font-size: 5vmin;
+    padding: 0;
+    margin: 0 0 10px 0; }
 
+
+// Sidebar
+.sidebar {
+  color: $alt-font;
+  background: $sidebar-bg; }
+
+.social {
+  clear: left; }
+  .social ul {
+  margin-top: 10px;
+  padding: 0 !important; }
+  .social li {
+    list-style: none;
+    display: block; }
+
+.contactInfo h3 {
+  font-size: 3vmin;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  border-bottom: 2px solid $alt-font; }
+
+// Media Queries
 
 @media (min-width: 768px) {
   .content {
-      float: right !important; 
-    }
+      float: right !important;
+      position: relative;
+      top: -160px; }
+  .profImg {
+    min-height: 300px; }
 }
 
-@media screen and (max-width: 768px) and (orientation: portrait){
+@media screen and (max-width: 767px) and (orientation: landscape) {
   .profImg {
-    margin-bottom: 30px;
-    height: 70vh;
-    max-width: 500px;
-    margin: 20px auto;
-  }
-  #name {
-    height: 22vh;
-  }
-  .content {
-      //position: relative;
-      //top: -330px; 
-    }
+    min-height: 500px; }
   .row {
-    max-width: 550px;
-    margin: 0 auto !important;
-  }
+    max-width: 500px;
+    margin: 0 auto !important; }
+}
+
+@media screen and (max-width: 767px) and (orientation: portrait) {
+  .profImg {
+    height: 70vh;
+    margin: 20px auto;  }
+  #name h1 {
+    font-size: 10vmin; }
+  #name p {
+    font-size: 3vmin; }
+  .row {
+    max-width: 500px;
+    margin: 0 auto !important; }
+  .social {
+    text-align: center; }
+  .social li {
+    display: inline-block; }
 }
 
