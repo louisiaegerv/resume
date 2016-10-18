@@ -93,8 +93,13 @@ h1, h2, h3, h4, p, li, ul {
   margin: 20px 0; }
 
 .techPic img {
+  transition: all .5s;
   width: 100%;
   border-radius: 5%; }
+
+.techPic img:hover {
+  transition: .3s;
+  box-shadow: 0px 0px 80px white; }
 
 .sidebar {
   color: #FFF;
