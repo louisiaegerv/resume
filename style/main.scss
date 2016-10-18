@@ -8,6 +8,7 @@
 $main-font: #5D5956;
 $alt-font: #FFF;
 $sidebar-bg: #4E90D1;
+$fade-color: rgba(255, 255, 255, .5);
 $page-bg: rgba(0, 0, 0, .05);
 
 
@@ -18,6 +19,10 @@ html, body {
 
 h1, h2, h3, h4, p, li, ul {
   font-family: $f2; }
+
+.fadeTextColor {
+  color: $fade-color;
+}
 
 #name h1 {
   font-family: $f4; }
@@ -55,12 +60,10 @@ h1, h2, h3, h4, p, li, ul {
     transition: .3s;
     color: $alt-font;
     background: $sidebar-bg; }
-  .card .row {
-    padding: 0 0 0 10px;  }
 
 .iconSpace {
   text-align: center;
-  font-size: 8vmin;
+  font-size: 6vmin;
   padding: 0 10px; }
 
 .sectionTitle {
@@ -81,18 +84,31 @@ h1, h2, h3, h4, p, li, ul {
 
 .social {
   clear: left; }
-  .social ul {
-  margin-top: 10px;
-  padding: 0 !important; }
-  .social li {
-    list-style: none;
-    display: block; }
+  .socialIcon {
+    text-align: center;
+    font-size: 4vmin; 
+    color: white;
+    transition: all .3s; }
+    .socialIcon .fa, .contactInfo .fa {
+      color: white; }
+    .socialIcon img {
+      height: 4vmin;
+      transition: all .3s; }
+      .socialIcon:hover {
+        transition: .3s;
+        filter: opacity(20%); }
+    .account {
+      margin: 0; }
+    .padRight {
+      padding: 0 40px 0 15px; }
 
-.contactInfo h3 {
-  font-size: 3vmin;
+.contactInfo h3, .socialInfo h3 {
+  font-size: 4vmin;
   padding-bottom: 10px;
   text-transform: uppercase;
   border-bottom: 2px solid $alt-font; }
+  .contactInfo .fa {
+    font-size: 3vmin; }
 
 // Media Queries
 
@@ -103,6 +119,10 @@ h1, h2, h3, h4, p, li, ul {
       top: -160px; }
   .profImg {
     min-height: 300px; }
+  .shrinkText {
+    font-size: 1.3vmin; }
+  .socialIcon {
+    clear: both; }
 }
 
 @media screen and (max-width: 767px) and (orientation: landscape) {
@@ -113,7 +133,7 @@ h1, h2, h3, h4, p, li, ul {
     margin: 0 auto !important; }
 }
 
-@media screen and (max-width: 767px) and (orientation: portrait) {
+@media screen and (max-width: 767px) {
   .profImg {
     height: 70vh;
     margin: 20px auto;  }
@@ -126,7 +146,15 @@ h1, h2, h3, h4, p, li, ul {
     margin: 0 auto !important; }
   .social {
     text-align: center; }
-  .social li {
-    display: inline-block; }
+    .socialIcon {
+      font-size: 10vmin; }
+      .socialIcon img {
+        position: relative;
+        top: -3px;
+        height: 9vmin; }
+  .invis {
+    display: none; }
+  .contactInfo .row .col-xs-3 {
+    text-align: right; }
 }
 

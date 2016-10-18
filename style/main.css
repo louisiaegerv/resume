@@ -5,6 +5,9 @@ html, body {
 h1, h2, h3, h4, p, li, ul {
   font-family: "Josefin Sans", sans-serif; }
 
+.fadeTextColor {
+  color: rgba(255, 255, 255, 0.5); }
+
 #name h1 {
   font-family: "Lobster", cursive; }
 
@@ -42,12 +45,9 @@ h1, h2, h3, h4, p, li, ul {
   color: #FFF;
   background: #4E90D1; }
 
-.card .row {
-  padding: 0 0 0 10px; }
-
 .iconSpace {
   text-align: center;
-  font-size: 8vmin;
+  font-size: 6vmin;
   padding: 0 10px; }
 
 .sectionTitle {
@@ -68,19 +68,37 @@ h1, h2, h3, h4, p, li, ul {
 .social {
   clear: left; }
 
-.social ul {
-  margin-top: 10px;
-  padding: 0 !important; }
+.socialIcon {
+  text-align: center;
+  font-size: 4vmin;
+  color: white;
+  transition: all .3s; }
 
-.social li {
-  list-style: none;
-  display: block; }
+.socialIcon .fa, .contactInfo .fa {
+  color: white; }
 
-.contactInfo h3 {
-  font-size: 3vmin;
+.socialIcon img {
+  height: 4vmin;
+  transition: all .3s; }
+
+.socialIcon:hover {
+  transition: .3s;
+  filter: opacity(20%); }
+
+.account {
+  margin: 0; }
+
+.padRight {
+  padding: 0 40px 0 15px; }
+
+.contactInfo h3, .socialInfo h3 {
+  font-size: 4vmin;
   padding-bottom: 10px;
   text-transform: uppercase;
   border-bottom: 2px solid #FFF; }
+
+.contactInfo .fa {
+  font-size: 3vmin; }
 
 @media (min-width: 768px) {
   .content {
@@ -89,7 +107,13 @@ h1, h2, h3, h4, p, li, ul {
     top: -160px; }
 
   .profImg {
-    min-height: 300px; } }
+    min-height: 300px; }
+
+  .shrinkText {
+    font-size: 1.3vmin; }
+
+  .socialIcon {
+    clear: both; } }
 @media screen and (max-width: 767px) and (orientation: landscape) {
   .profImg {
     min-height: 500px; }
@@ -97,7 +121,7 @@ h1, h2, h3, h4, p, li, ul {
   .row {
     max-width: 500px;
     margin: 0 auto !important; } }
-@media screen and (max-width: 767px) and (orientation: portrait) {
+@media screen and (max-width: 767px) {
   .profImg {
     height: 70vh;
     margin: 20px auto; }
@@ -115,7 +139,18 @@ h1, h2, h3, h4, p, li, ul {
   .social {
     text-align: center; }
 
-  .social li {
-    display: inline-block; } }
+  .socialIcon {
+    font-size: 10vmin; }
+
+  .socialIcon img {
+    position: relative;
+    top: -3px;
+    height: 9vmin; }
+
+  .invis {
+    display: none; }
+
+  .contactInfo .row .col-xs-3 {
+    text-align: right; } }
 
 /*# sourceMappingURL=main.css.map */
