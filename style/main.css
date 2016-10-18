@@ -13,7 +13,7 @@ html, body, .container-fluid {
   max-width: 1000px; }
 
 .profImg {
-  height: 300px;
+  min-height: 300px;
   background: url(../assets/img/me.jpg) no-repeat center 0px !important;
   background-size: cover !important; }
 
@@ -49,7 +49,7 @@ html, body, .container-fluid {
 @media (min-width: 768px) {
   .content {
     float: right !important; } }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (orientation: portrait) {
   .profImg {
     margin-bottom: 30px;
     height: 70vh;
