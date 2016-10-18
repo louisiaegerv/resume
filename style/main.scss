@@ -80,23 +80,26 @@ h1, h2, h3, h4, p, li, ul {
     padding: 0;
     margin: 0 0 10px 0; }
 
-.content .jobContainer {
+.content .jobContainer, .content .schoolContainer {
   padding: 0;
   border-bottom: 2px solid $line; }
+  .content .noBorder {
+    border-bottom: none; }
 
-.content .position {
-  font-size: 2.5vmin;
+.content .position, .content .honorTitle {
+  font-size: 2.8vmin;
   font-weight: 600;
   margin-top: 30px; }
   .content .date {
     color: $date-color;
-    font-size: 2vmin;
+    font-size: 2.2vmin;
     font-weight: 400;
-    margin-bottom: 15px; }
+    margin-bottom: 20px; }
   .content .jobDescription {
-    font-size: 1.8vmin; }
+    font-size: 2vmin; }
 
-// Sidebar
+// ----- Sidebar ----- //
+
 .sidebar {
   color: $alt-font;
   background: $sidebar-bg; }
@@ -131,7 +134,7 @@ h1, h2, h3, h4, p, li, ul {
   .contactInfo .fa {
     font-size: 3vmin; }
 
-// Media Queries
+// ----- Media Queries ----- //
 
 @media (min-width: 768px) {
   .content {
@@ -164,7 +167,8 @@ h1, h2, h3, h4, p, li, ul {
     font-size: 3vmin; }
   .row {
     max-width: 500px;
-    margin: 0 auto !important; }
+    margin: 0 auto !important; 
+  }
   .social {
     text-align: center; }
     .socialIcon {
@@ -177,7 +181,13 @@ h1, h2, h3, h4, p, li, ul {
     display: none; }
   .contactInfo .row .col-xs-3 {
     text-align: right; }
-  .content .jobDescription {
+  .content .position, .content .major {
+    font-size: 3.8vmin; }
+  .content .date {
+    font-size: 2.8vmin; }
+  .content .jobDescription, .honorTitle {
     font-size: 3vmin; }
+  .title {
+    font-weight: 400; }
 }
 
