@@ -10,19 +10,25 @@ $alt-font: #FFF;
 $sidebar-bg: #4E90D1;
 $fade-color: rgba(255, 255, 255, .5);
 $page-bg: rgba(0, 0, 0, .05);
+$date-color: #5cc1da;
+$line: #D5D0D8;
 
 
 // Document styling
 html, body {
   color: $main-font;
-  background: $page-bg; }
+  background: $page-bg;
+  font-weight: 400; }
 
 h1, h2, h3, h4, p, li, ul {
-  font-family: $f2; }
+  font-family: $f2;
+  font-weight: 400; }
+
+.title {
+  font-weight: 300; }
 
 .fadeTextColor {
-  color: $fade-color;
-}
+  color: $fade-color; }
 
 #name h1 {
   font-family: $f4; }
@@ -64,23 +70,38 @@ h1, h2, h3, h4, p, li, ul {
 .iconSpace {
   text-align: center;
   font-size: 6vmin;
-  padding: 0 10px; }
-
+  padding: 0 0 0 20px; }
 .sectionTitle {
   border-bottom: 2px solid $main-font;
   padding-left: 0 !important;
-  padding-top: 8px;
-  margin-left: 15px; }
+  padding-top: 8px; }
   .sectionTitle h1 {
     font-size: 5vmin;
     padding: 0;
     margin: 0 0 10px 0; }
 
+.content .jobContainer {
+  padding: 0;
+  border-bottom: 2px solid $line; }
+
+.content .position {
+  font-size: 2.5vmin;
+  font-weight: 600;
+  margin-top: 30px; }
+  .content .date {
+    color: $date-color;
+    font-size: 2vmin;
+    font-weight: 400;
+    margin-bottom: 15px; }
+  .content .jobDescription {
+    font-size: 1.8vmin; }
 
 // Sidebar
 .sidebar {
   color: $alt-font;
   background: $sidebar-bg; }
+  .sidebar:hover {
+    background: rgba(0,0,0, .9); }
 
 .social {
   clear: left; }
@@ -96,7 +117,7 @@ h1, h2, h3, h4, p, li, ul {
       transition: all .3s; }
       .socialIcon:hover {
         transition: .3s;
-        filter: opacity(20%); }
+        filter: opacity(60%); }
     .account {
       margin: 0; }
     .padRight {
@@ -156,5 +177,7 @@ h1, h2, h3, h4, p, li, ul {
     display: none; }
   .contactInfo .row .col-xs-3 {
     text-align: right; }
+  .content .jobDescription {
+    font-size: 3vmin; }
 }
 

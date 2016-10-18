@@ -1,9 +1,14 @@
 html, body {
   color: #5D5956;
-  background: rgba(0, 0, 0, 0.05); }
+  background: rgba(0, 0, 0, 0.05);
+  font-weight: 400; }
 
 h1, h2, h3, h4, p, li, ul {
-  font-family: "Josefin Sans", sans-serif; }
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400; }
+
+.title {
+  font-weight: 300; }
 
 .fadeTextColor {
   color: rgba(255, 255, 255, 0.5); }
@@ -48,22 +53,42 @@ h1, h2, h3, h4, p, li, ul {
 .iconSpace {
   text-align: center;
   font-size: 6vmin;
-  padding: 0 10px; }
+  padding: 0 0 0 20px; }
 
 .sectionTitle {
   border-bottom: 2px solid #5D5956;
   padding-left: 0 !important;
-  padding-top: 8px;
-  margin-left: 15px; }
+  padding-top: 8px; }
 
 .sectionTitle h1 {
   font-size: 5vmin;
   padding: 0;
   margin: 0 0 10px 0; }
 
+.content .jobContainer {
+  padding: 0;
+  border-bottom: 2px solid #D5D0D8; }
+
+.content .position {
+  font-size: 2.5vmin;
+  font-weight: 600;
+  margin-top: 30px; }
+
+.content .date {
+  color: #5cc1da;
+  font-size: 2vmin;
+  font-weight: 400;
+  margin-bottom: 15px; }
+
+.content .jobDescription {
+  font-size: 1.8vmin; }
+
 .sidebar {
   color: #FFF;
   background: #4E90D1; }
+
+.sidebar:hover {
+  background: rgba(0, 0, 0, 0.9); }
 
 .social {
   clear: left; }
@@ -83,7 +108,7 @@ h1, h2, h3, h4, p, li, ul {
 
 .socialIcon:hover {
   transition: .3s;
-  filter: opacity(20%); }
+  filter: opacity(60%); }
 
 .account {
   margin: 0; }
@@ -151,6 +176,9 @@ h1, h2, h3, h4, p, li, ul {
     display: none; }
 
   .contactInfo .row .col-xs-3 {
-    text-align: right; } }
+    text-align: right; }
+
+  .content .jobDescription {
+    font-size: 3vmin; } }
 
 /*# sourceMappingURL=main.css.map */
