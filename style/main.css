@@ -19,6 +19,9 @@ h1, h2, h3, h4, p, li, ul {
 .container-fluid {
   max-width: 1000px; }
 
+.padSides {
+  padding: 20px 20px 0 20px; }
+
 .profImg, .nameHolder {
   margin-top: 20px; }
 
@@ -85,6 +88,10 @@ h1, h2, h3, h4, p, li, ul {
 
 .content .jobDescription {
   font-size: 2vmin; }
+
+.techPic img {
+  width: 100%;
+  border-radius: 5%; }
 
 .sidebar {
   color: #FFF;
