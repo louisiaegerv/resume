@@ -34,7 +34,7 @@ h1, h2, h3, h4, p, li, ul {
   font-family: $f4; }
 
 .container-fluid {
-  max-width: 1000px; }
+  max-width: 1400px; }
 
 .padSides {
   padding: 20px 20px 0 20px; }
@@ -171,6 +171,7 @@ h1, h2, h3, h4, p, li, ul {
     margin: 0 auto !important; }
 }
 
+// --- Mobile Devices --- //
 @media screen and (max-width: 767px) {
   .profImg {
     height: 70vh;
