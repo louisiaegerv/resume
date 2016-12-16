@@ -109,8 +109,7 @@ h1, h2, h3, h4, p, li, ul {
     border-radius: 5%; }
     .techPic img:hover {
       transition: .3s;
-      box-shadow: 0px 0px 80px rgba(255,255,255, 1);
-    }
+      box-shadow: 0px 0px 80px rgba(255,255,255, 1); }
 
 // ----- Sidebar ----- //
 
@@ -132,7 +131,7 @@ h1, h2, h3, h4, p, li, ul {
     .socialIcon img {
       height: 4vmin;
       transition: all .3s; }
-      .socialIcon:hover {
+      .socialIcon:hover, .fa-envelope:hover {
         transition: .3s;
         filter: opacity(60%); }
     .account {
@@ -147,6 +146,11 @@ h1, h2, h3, h4, p, li, ul {
   border-bottom: 2px solid $alt-font; }
   .contactInfo .fa {
     font-size: 3vmin; }
+    .contactInfo a {
+        color: white;
+        text-decoration: none; }
+    .contactInfo a:hover {
+        color: $sidebar-bg; }
 
 // ----- Media Queries ----- //
 

@@ -124,7 +124,7 @@ h1, h2, h3, h4, p, li, ul {
   height: 4vmin;
   transition: all .3s; }
 
-.socialIcon:hover {
+.socialIcon:hover, .fa-envelope:hover {
   transition: .3s;
   filter: opacity(60%); }
 
@@ -142,6 +142,13 @@ h1, h2, h3, h4, p, li, ul {
 
 .contactInfo .fa {
   font-size: 3vmin; }
+
+.contactInfo a {
+  color: white;
+  text-decoration: none; }
+
+.contactInfo a:hover {
+  color: #4E90D1; }
 
 @media (min-width: 768px) {
   .content {
