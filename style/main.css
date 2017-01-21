@@ -27,8 +27,9 @@ h1, h2, h3, h4, p, li, ul {
 
 .profImg {
   margin-bottom: 30px;
-  background: url(../assets/img/me.jpg) no-repeat center 0px !important;
-  background-size: cover !important; }
+  background: linear-gradient(90deg, rgba(185, 166, 97, 0), rgba(249, 170, 26, 0.83)), url(../assets/img/me.jpg) no-repeat center 0px !important;
+  background-size: cover !important;
+    background-blend-mode: soft-light; }
 
 .nameHolder {
   text-align: center !important; }
